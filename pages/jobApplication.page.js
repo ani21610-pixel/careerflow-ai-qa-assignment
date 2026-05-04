@@ -29,10 +29,8 @@ class JobApplicationPage extends BasePage {
   }
 
   async submit() {
-    // Scroll to bottom (important)
     await this.page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-  
-    await this.page.click(this.submitBtn);
+    await this.page.click('#submit');
   }
 }
 
