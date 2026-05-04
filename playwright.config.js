@@ -7,7 +7,7 @@ module.exports = defineConfig({
   retries: 1,
   use: {
     viewport: { width: 1280, height: 720 },
-    headless: false,
+    headless: true,
     browserName: 'chromium',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure'
